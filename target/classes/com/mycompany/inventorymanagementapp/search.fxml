@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="336.0" prefWidth="371.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.inventorymanagementapp.SearchController">
+   <VBox prefHeight="99.0" prefWidth="318.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search by name, ID, or supplier" wrappingWidth="176.21630859375" />
+          <TextField fx:id="searchField" promptText="Search by name, ID, or supplier" />
+         <Button mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+      </children>
+   </VBox>
+    <ListView fx:id="resultsList" prefHeight="193.0" prefWidth="371.0" />
+   <TextField fx:id="pathField" />
+   <Button mnemonicParsing="false" onAction="#handleExport" text="Export to CSV" />
+   <Button mnemonicParsing="false" onAction="#switchToMenu" text="Main Menu" />
+</VBox>
